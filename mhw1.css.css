@@ -1,0 +1,176 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    height:780px;
+}
+
+#immaggini{
+    display:flex;
+    justify-content: space-around;
+    height: 450px;
+    }
+
+#immaggini div{
+    width: calc(25% - 20px);
+}
+
+#immaggini img{
+    width:65%;
+    height:40%;
+    cursor: pointer;
+}
+
+header{
+    border:2px solid black;
+    height:200px;
+    background-image: url("Sfondo.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    background-position: center;
+  }
+
+  header nav{
+      font-size:14px;
+      display:flex;
+      justify-content: space-between;
+      height:100%;
+      margin:20px;
+  }
+
+  #links a{
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius:10px;
+    background-color:black;
+    color:white;
+    text-decoration: none;
+}
+
+#links a:hover{
+    background-color: whitesmoke;
+    color:black;
+    transition: 0.5s;
+}
+
+   #logo{
+           margin: 0 20px;
+        }           
+
+
+  section{
+      margin: 100px 125px;
+      margin: 0;
+      height:450px;
+
+  }
+
+  #sinistra{
+    width:10%;
+    background-color:black;
+    height:450px;
+  }
+  #destra{
+    width:10%;
+    background-color:black;
+    height:450px;
+
+     }
+
+   #destra a{
+    display:block;
+    padding:10px 15px;
+    color:whitesmoke;
+    text-decoration: none;
+    font-family: "Rubik";
+    letter-spacing: 2px;
+    border-bottom: 1px solid whitesmoke;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+     
+
+  #sinistra a{
+    display:block;
+    padding:10px 5px;
+    text-decoration: none;
+    font-family: "Rubik";
+    letter-spacing: 2px;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+  }
+
+ #destra a:hover, #sinistra a:hover{
+    background-color:white;
+    color:black;
+    transition:0.5s;
+
+}
+#squadre{
+    display:flex;
+    height:450px;
+    justify-content: space-between;
+ 
+}
+
+#fila{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#mobile{
+    display:none;
+  }
+
+  @media (max-width:800px){
+    #links {
+     display:none;
+    }
+    #mobile{
+     display:block;
+   }
+   #destra{
+       display:none;
+   }
+  #sinistra{
+      display:none;
+  }
+
+#immaggini img{
+       width:50%;
+       height:20%;
+}  
+ }
+
+  #mobile div{
+  width:25px;
+  height:3px;
+  background-color:black;
+  margin:5px 10px;
+  }
+
+  #mobile:hover{
+      cursor:pointer;
+    }
+
+footer{
+    background-color: rgb(105, 73, 14);
+    height:130px;
+    display:flex;
+    justify-content: center;
+    font-size:100%;
+}
+
+
+h1{
+    color:whitesmoke;
+   text-align: center;
+}
