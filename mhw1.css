@@ -1,0 +1,140 @@
+body{
+    margin:0;
+}
+
+header{
+    height:40vh;
+    background-image: url("Sfondo.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+nav{
+    display:flex;
+    height:10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 70px;
+    width: 130px;
+}
+
+
+.links{
+    margin-top: 10px;
+}
+.bottom{
+    border:2px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 15px;
+    cursor:pointer;
+}
+#links :hover{
+    background-color: black;
+    color:white;
+    transition:0.5s;
+}
+
+section {
+    height:60vh;
+    background-color: lightslategray;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.sinistra{
+     height:60vh;
+     width:15vw;
+     background-color:black;
+
+}
+
+img{
+    width:10vw;
+    height:25vh;  
+    cursor: pointer;
+}
+
+.centro{
+    height:60vh;
+    width:70vw;
+    background-image: url("manto1.jpg");
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.destra{
+    height:60vh;
+    width:15vw;
+    background-color:black;
+
+}
+
+ .destra :hover , .sinistra :hover{
+    background-color: lightgrey;
+    color:black;
+    transition:0.5s;
+}
+.blocchi {
+    height:15vh;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px;
+    justify-content: space-around;
+    display:flex;
+    align-items: center;
+    
+}
+
+footer{
+    height:100%;
+   background-color:rgb(48, 41, 41);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin:0;
+}
+
+#mobile{
+    display:none;
+  }
+
+  #mobile div{
+    width:25px;
+    height:3px;
+    background-color:white;
+    margin:5px 10px;
+    cursor: pointer
+    }
+
+@media (max-width:500px){
+    #links, .destra, .sinistra{
+        display: none;
+    }
+    
+    #mobile{
+        display: block;
+    }
+    
+    .centro{
+        width:100vw;
+    }
+
+    img{
+        width:30%;
+        height:60%;
+ }  
+}
+
